@@ -18,8 +18,7 @@ if (file_exists(SYSTEMPATH . 'Config/Routes.php'))
  * --------------------------------------------------------------------
  */
 $routes->setDefaultNamespace('App\Controllers');
-$routes->setDefaultController('Home');
-$routes->setDefaultMethod('index');
+
 $routes->setTranslateURIDashes(false);
 $routes->set404Override();
 $routes->setAutoRoute(true);
@@ -54,11 +53,11 @@ if (file_exists(APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php'))
 
 
 $routes->get('/', 'admin/Dashboard::index');
-$routes->get('newUser', 'Admin/User::new_user');
+$routes->get('/newUser', 'Admin/User::new_user');
+$routes->get('edit/(:num)', 'Admin/User::editUser/$1');
 $routes->get('/listar', 'Admin/User::listar');
-$routes->get('editUser/(:num)', 'Admin/User::editUser/$1');
 $routes->get('buscar', 'Admin/User::buscar');
-$routes->post('update', 'Admin/User::update');
+$routes->put('update/(:num)', 'Admin/User::update/$1');
 $routes->get('deleteUser', 'Admin/User::delete_user');
 $routes->get('/login', 'Login/Login::index');
 $routes->post('loginValidate', 'Login/Login::login_post');

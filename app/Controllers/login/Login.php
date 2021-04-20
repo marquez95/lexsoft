@@ -38,6 +38,7 @@ class Login extends Controller{
             $type = ["type" => $datosUsuario[0]['type']];
 
             $data = [
+                "id_user" => $datosUsuario[0]['id_user'],
                 "username" => $datosUsuario[0]['username'],
                 "type" => $datosUsuario[0]['type'],
                 "nombre" => $datosUsuario[0]['primer_nombre'],

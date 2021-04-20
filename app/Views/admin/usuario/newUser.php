@@ -21,10 +21,12 @@
           <form method="POST" action="<?= base_url('admin/user/insert_user')?>">
             <div class="card-body">
               <div class="row form-group">
+              
                 <div class="col">
                 
                   <label for="primer_nombre">*Primer Nombre</label>
                   <input type="text" class="form-control" id="primer_nombre" name="primer_nombre" placeholder="Primer nombre" required>
+                 
                 </div>
                 <div class="col">
                   <label for="segundo_nombre">Segundo Nombre</label>
@@ -83,7 +85,7 @@
               <div class="row form-group">
               <div class="col">
                 <label for="numero_telefono">Telefono</label>
-                <input type="numero_telefono" class="form-control" id="numero_telefono" name="numero_telefono" placeholder="Escriba su numero de telefono">
+                <input type="number" class="form-control" id="numero_telefono" name="numero_telefono" placeholder="Escriba su numero de telefono">
               </div>
               <div class="col">
                 <label for="email">*Email</label>

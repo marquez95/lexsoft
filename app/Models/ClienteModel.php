@@ -7,7 +7,6 @@ class UserModel extends Model{
     protected $table      = 'lexsoft_tb_users';
     protected $primaryKey = 'id_user';
     protected $allowedFields = [
-   
         'primer_nombre',
         'segundo_nombre',
         'tercer_nombre',

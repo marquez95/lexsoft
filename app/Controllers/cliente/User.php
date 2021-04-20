@@ -11,7 +11,7 @@ class User extends Controller{
     //index
     public function new_user()
     {   
-        $this->vistaDashboarAdmin('usuario/newUser',[]);   
+        $this->vistaDashboarAdmin('user/newUser',[]);   
     }
 
     //datos de usuario
@@ -63,7 +63,7 @@ class User extends Controller{
             'datos' => $userModel->asObject()->get(),
             'mensaje' =>$mensaje];
         
-        $this->vistaDashboarAdmin('usuario/listar',$data);
+        $this->vistaDashboarAdmin('user/listar',$data);
 
     }
 
@@ -73,17 +73,16 @@ class User extends Controller{
        
         $userModel = new UserModel();
 		$data = ['datos' => $userModel->asObject()->get()];  
-        $this->vistaDashboarAdmin('usuario/buscar',$data);   
+        $this->vistaDashboarAdmin('user/buscar',$data);   
     }
     
 
     //vista editar usuarios
-    public function editUser($id_user=null)
+    public function editUser($id_user = null)
     {   
-        
         $userModel = new UserModel();
-        $data['datos'] = $userModel->find($id_user);
-        $this->vistaDashboarAdmin('usuario/editUser',$data);
+        $data['datos'] = $userModel->where('id_user', $id_user)->first();
+        $this->vistaDashboarAdmin('user/editUser',$data);   
        
         
 
@@ -92,11 +91,11 @@ class User extends Controller{
 
 
     //update usuarios
-    public function update($id_user= null)
+    public function update()
     {
        
         $userModel = new UserModel();
-       
+        $id_user = $this->request->getVar('id_user');
         $data=$this->datosUsuario();
         $respuesta = $userModel->update($id_user, $data);
 

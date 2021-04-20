@@ -10,14 +10,14 @@
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
     <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="<?=base_url('plugins/fontawesome-free/css/all.min.css')?>">
-    <link rel="stylesheet" href="<?=base_url('plugins/datatables-bs4/css/dataTables.bootstrap4.min.css')?>">
-    <link rel="stylesheet" href="<?=base_url('plugins/datatables-responsive/css/responsive.bootstrap4.min.css')?>">
-    <link rel="stylesheet" href="<?=base_url('plugins/datatables-buttons/css/buttons.bootstrap4.min.css')?>">
+    <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+    <link rel="stylesheet" href="plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
     <!-- IonIcons -->
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <!-- Theme style -->
-    <link rel="stylesheet" href="<?=base_url('dist/css/adminlte.min.css')?>">
+    <link rel="stylesheet" href="dist/css/adminlte.min.css">
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
@@ -183,7 +183,7 @@
         <aside class="main-sidebar sidebar-dark-primary elevation-4">
             <!-- Brand Logo -->
             <a href="<?= base_url()?>" class="brand-link">
-                <img src="<?= base_url('dist/img/AdminLTELogo2.png')?>" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
+                <img src="dist/img/AdminLTELogo2.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
                     style="opacity: .8">
                 <span class="brand-text font-weight-light">Lexsoft | <small><?= session('type');?></small></span>
             </a>
@@ -193,7 +193,7 @@
                 <!-- Sidebar user panel (optional) -->
                 <div class="user-panel mt-3 pb-3 mb-3 d-flex">
                     <div class="image">
-                        <img src="<?= base_url('dist/img/avatar.png')?>" class="img-circle elevation-2" alt="User Image">
+                        <img src="dist/img/avatar.png" class="img-circle elevation-2" alt="User Image">
                     </div>
                     <div class="info">
                         <a href="<?= base_url()?>" class="d-block"><?= session('nombre');?> <?= session('apellido');?> 

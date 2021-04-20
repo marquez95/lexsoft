@@ -1,3 +1,5 @@
+
+
 <div class="content-header">
     <div class="col-sm-6">
         <h1 class="m-0">Listar |
@@ -34,7 +36,7 @@
                                 <th>Usuario</th>
                                 <th>Tipo</th>
                                 <th>Correo</th>
-                                <th>Editar</th>
+                                <th>Actualizar</th>
                                 <th>Eliminar</th>
                             </tr>
                             
@@ -48,8 +50,9 @@
                                 <td><?= $key->email?></td>
                                 
                                 <td>
-                                    <a href="<?= base_url('admin/User/editUser/'.$key->id_user);?>"
-                                        class="btn btn-primary btn-sm">Edit</a>
+                                
+                                    <a  href="<?= base_url("admin/user/editUser/$key->id_user")?>"
+                                        class="btn btn-warning btn-sm">Actualizar</a>
                                 </td>
                                 <td>
                                     <a href="<?= base_url('admin/user/delete_user/'.$key->id_user)?>"
