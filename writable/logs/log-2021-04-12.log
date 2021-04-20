@@ -1,0 +1,499 @@
+CRITICAL - 2021-04-12 16:15:56 --> Cannot declare class App\Controllers\admin\User, because the name is already in use
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-04-12 16:16:25 --> Cannot declare class App\Controllers\admin\User, because the name is already in use
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-04-12 16:16:54 --> Cannot declare class App\Controllers\admin\User, because the name is already in use
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-04-12 16:16:55 --> Cannot declare class App\Controllers\admin\User, because the name is already in use
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-04-12 16:16:55 --> Cannot declare class App\Controllers\admin\User, because the name is already in use
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-04-12 16:16:55 --> Cannot declare class App\Controllers\admin\User, because the name is already in use
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-04-12 16:16:56 --> Cannot declare class App\Controllers\admin\User, because the name is already in use
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-04-12 16:16:56 --> Cannot declare class App\Controllers\admin\User, because the name is already in use
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-04-12 16:16:56 --> Cannot declare class App\Controllers\admin\User, because the name is already in use
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-04-12 16:16:56 --> Cannot declare class App\Controllers\admin\User, because the name is already in use
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-04-12 16:16:56 --> Cannot declare class App\Controllers\admin\User, because the name is already in use
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-04-12 16:23:39 --> Invalid file: template/header.php
+#0 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\View\View.php(203): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('template/header...')
+#1 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('template/header', Array, true)
+#2 C:\xampp\htdocs\lexsoft\app\Controllers\admin\Dashboard.php(11): view('template/header')
+#3 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\admin\Dashboard->index()
+#4 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Dashboard))
+#5 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\lexsoft\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-04-12 17:19:52 --> Undefined property: App\Controllers\admin\User::$db
+#0 C:\xampp\htdocs\lexsoft\app\Controllers\admin\User.php(14): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 14, Array)
+#1 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\admin\User->new_user()
+#2 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\User))
+#3 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\lexsoft\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-04-12 17:20:28 --> Undefined property: App\Controllers\admin\User::$db
+#0 C:\xampp\htdocs\lexsoft\app\Controllers\admin\User.php(15): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 15, Array)
+#1 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\admin\User->new_user()
+#2 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\User))
+#3 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\lexsoft\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-04-12 17:20:29 --> Undefined property: App\Controllers\admin\User::$db
+#0 C:\xampp\htdocs\lexsoft\app\Controllers\admin\User.php(15): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 15, Array)
+#1 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\admin\User->new_user()
+#2 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\User))
+#3 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\lexsoft\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-04-12 17:20:29 --> Undefined property: App\Controllers\admin\User::$db
+#0 C:\xampp\htdocs\lexsoft\app\Controllers\admin\User.php(15): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 15, Array)
+#1 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\admin\User->new_user()
+#2 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\User))
+#3 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\lexsoft\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-04-12 17:20:29 --> Undefined property: App\Controllers\admin\User::$db
+#0 C:\xampp\htdocs\lexsoft\app\Controllers\admin\User.php(15): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 15, Array)
+#1 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\admin\User->new_user()
+#2 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\User))
+#3 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\lexsoft\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-04-12 17:20:29 --> Undefined property: App\Controllers\admin\User::$db
+#0 C:\xampp\htdocs\lexsoft\app\Controllers\admin\User.php(15): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 15, Array)
+#1 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\admin\User->new_user()
+#2 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\User))
+#3 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\lexsoft\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-04-12 17:21:08 --> Undefined property: App\Controllers\admin\User::$db
+#0 C:\xampp\htdocs\lexsoft\app\Controllers\admin\User.php(15): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 15, Array)
+#1 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\admin\User->new_user()
+#2 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\User))
+#3 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\lexsoft\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-04-12 17:21:09 --> Undefined property: App\Controllers\admin\User::$db
+#0 C:\xampp\htdocs\lexsoft\app\Controllers\admin\User.php(15): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 15, Array)
+#1 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\admin\User->new_user()
+#2 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\User))
+#3 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\lexsoft\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-04-12 17:21:09 --> Undefined property: App\Controllers\admin\User::$db
+#0 C:\xampp\htdocs\lexsoft\app\Controllers\admin\User.php(15): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 15, Array)
+#1 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\admin\User->new_user()
+#2 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\User))
+#3 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\lexsoft\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-04-12 17:21:09 --> Undefined property: App\Controllers\admin\User::$db
+#0 C:\xampp\htdocs\lexsoft\app\Controllers\admin\User.php(15): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 15, Array)
+#1 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\admin\User->new_user()
+#2 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\User))
+#3 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\lexsoft\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-04-12 17:21:43 --> Undefined property: App\Controllers\admin\User::$db
+#0 C:\xampp\htdocs\lexsoft\app\Controllers\admin\User.php(15): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 15, Array)
+#1 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\admin\User->new_user()
+#2 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\User))
+#3 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\lexsoft\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-04-12 17:21:43 --> Undefined property: App\Controllers\admin\User::$db
+#0 C:\xampp\htdocs\lexsoft\app\Controllers\admin\User.php(15): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 15, Array)
+#1 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\admin\User->new_user()
+#2 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\User))
+#3 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\lexsoft\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-04-12 17:21:43 --> Undefined property: App\Controllers\admin\User::$db
+#0 C:\xampp\htdocs\lexsoft\app\Controllers\admin\User.php(15): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 15, Array)
+#1 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\admin\User->new_user()
+#2 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\User))
+#3 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\lexsoft\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-04-12 17:21:44 --> Undefined property: App\Controllers\admin\User::$db
+#0 C:\xampp\htdocs\lexsoft\app\Controllers\admin\User.php(15): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 15, Array)
+#1 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\admin\User->new_user()
+#2 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\User))
+#3 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\lexsoft\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-04-12 17:32:29 --> Object of class App\Models\UserModel could not be converted to string
+#0 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\admin\Dashboard->index()
+#1 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Dashboard))
+#2 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\lexsoft\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-04-12 17:33:44 --> Object of class App\Models\UserModel could not be converted to string
+#0 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\admin\Dashboard->index()
+#1 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Dashboard))
+#2 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\lexsoft\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-04-12 17:33:44 --> Object of class App\Models\UserModel could not be converted to string
+#0 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\admin\Dashboard->index()
+#1 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Dashboard))
+#2 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\lexsoft\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-04-12 17:33:45 --> Object of class App\Models\UserModel could not be converted to string
+#0 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\admin\Dashboard->index()
+#1 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Dashboard))
+#2 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\lexsoft\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-04-12 17:33:45 --> Object of class App\Models\UserModel could not be converted to string
+#0 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\admin\Dashboard->index()
+#1 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Dashboard))
+#2 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\lexsoft\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-04-12 17:33:45 --> Object of class App\Models\UserModel could not be converted to string
+#0 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\admin\Dashboard->index()
+#1 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Dashboard))
+#2 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\lexsoft\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-04-12 17:33:45 --> Object of class App\Models\UserModel could not be converted to string
+#0 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\admin\Dashboard->index()
+#1 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Dashboard))
+#2 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\lexsoft\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-04-12 17:33:45 --> Object of class App\Models\UserModel could not be converted to string
+#0 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\admin\Dashboard->index()
+#1 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Dashboard))
+#2 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\lexsoft\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-04-12 17:33:46 --> Object of class App\Models\UserModel could not be converted to string
+#0 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\admin\Dashboard->index()
+#1 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Dashboard))
+#2 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\lexsoft\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-04-12 17:33:46 --> Object of class App\Models\UserModel could not be converted to string
+#0 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\admin\Dashboard->index()
+#1 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Dashboard))
+#2 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\lexsoft\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-04-12 17:33:46 --> Object of class App\Models\UserModel could not be converted to string
+#0 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\admin\Dashboard->index()
+#1 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Dashboard))
+#2 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\lexsoft\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-04-12 17:33:47 --> Object of class App\Models\UserModel could not be converted to string
+#0 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\admin\Dashboard->index()
+#1 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Dashboard))
+#2 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\lexsoft\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-04-12 17:33:47 --> Object of class App\Models\UserModel could not be converted to string
+#0 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\admin\Dashboard->index()
+#1 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Dashboard))
+#2 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\lexsoft\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-04-12 17:33:47 --> Object of class App\Models\UserModel could not be converted to string
+#0 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\admin\Dashboard->index()
+#1 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Dashboard))
+#2 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\lexsoft\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-04-12 17:33:47 --> Object of class App\Models\UserModel could not be converted to string
+#0 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\admin\Dashboard->index()
+#1 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Dashboard))
+#2 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\lexsoft\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-04-12 17:34:35 --> Object of class App\Models\UserModel could not be converted to string
+#0 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\admin\Dashboard->index()
+#1 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Dashboard))
+#2 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\lexsoft\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-04-12 17:34:35 --> Object of class App\Models\UserModel could not be converted to string
+#0 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\admin\Dashboard->index()
+#1 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Dashboard))
+#2 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\lexsoft\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-04-12 17:34:35 --> Object of class App\Models\UserModel could not be converted to string
+#0 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\admin\Dashboard->index()
+#1 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Dashboard))
+#2 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\lexsoft\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-04-12 17:34:36 --> Object of class App\Models\UserModel could not be converted to string
+#0 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\admin\Dashboard->index()
+#1 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Dashboard))
+#2 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\lexsoft\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-04-12 17:34:36 --> Object of class App\Models\UserModel could not be converted to string
+#0 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\admin\Dashboard->index()
+#1 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Dashboard))
+#2 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\lexsoft\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-04-12 17:34:36 --> Object of class App\Models\UserModel could not be converted to string
+#0 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\admin\Dashboard->index()
+#1 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Dashboard))
+#2 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\lexsoft\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-04-12 17:34:36 --> Object of class App\Models\UserModel could not be converted to string
+#0 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\admin\Dashboard->index()
+#1 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Dashboard))
+#2 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\lexsoft\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-04-12 17:34:36 --> Object of class App\Models\UserModel could not be converted to string
+#0 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\admin\Dashboard->index()
+#1 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Dashboard))
+#2 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\lexsoft\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-04-12 17:34:36 --> Object of class App\Models\UserModel could not be converted to string
+#0 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\admin\Dashboard->index()
+#1 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Dashboard))
+#2 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\lexsoft\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-04-12 17:34:36 --> Object of class App\Models\UserModel could not be converted to string
+#0 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\admin\Dashboard->index()
+#1 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Dashboard))
+#2 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\lexsoft\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-04-12 17:34:51 --> Object of class App\Models\UserModel could not be converted to string
+#0 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\admin\Dashboard->index()
+#1 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Dashboard))
+#2 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\lexsoft\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-04-12 17:34:53 --> Object of class App\Models\UserModel could not be converted to string
+#0 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\admin\Dashboard->index()
+#1 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Dashboard))
+#2 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\lexsoft\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-04-12 17:35:19 --> Undefined property: App\Controllers\admin\Dashboard::$db
+#0 C:\xampp\htdocs\lexsoft\app\Controllers\admin\Dashboard.php(11): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 11, Array)
+#1 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\admin\Dashboard->index()
+#2 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Dashboard))
+#3 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\lexsoft\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-04-12 17:35:20 --> Undefined property: App\Controllers\admin\Dashboard::$db
+#0 C:\xampp\htdocs\lexsoft\app\Controllers\admin\Dashboard.php(11): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 11, Array)
+#1 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\admin\Dashboard->index()
+#2 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Dashboard))
+#3 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\lexsoft\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-04-12 17:35:20 --> Undefined property: App\Controllers\admin\Dashboard::$db
+#0 C:\xampp\htdocs\lexsoft\app\Controllers\admin\Dashboard.php(11): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 11, Array)
+#1 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\admin\Dashboard->index()
+#2 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Dashboard))
+#3 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\lexsoft\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-04-12 17:35:20 --> Undefined property: App\Controllers\admin\Dashboard::$db
+#0 C:\xampp\htdocs\lexsoft\app\Controllers\admin\Dashboard.php(11): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 11, Array)
+#1 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\admin\Dashboard->index()
+#2 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Dashboard))
+#3 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\lexsoft\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-04-12 17:35:34 --> Undefined property: App\Controllers\admin\Dashboard::$db
+#0 C:\xampp\htdocs\lexsoft\app\Controllers\admin\Dashboard.php(11): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 11, Array)
+#1 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\admin\Dashboard->index()
+#2 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Dashboard))
+#3 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\lexsoft\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-04-12 17:35:35 --> Undefined property: App\Controllers\admin\Dashboard::$db
+#0 C:\xampp\htdocs\lexsoft\app\Controllers\admin\Dashboard.php(11): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 11, Array)
+#1 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\admin\Dashboard->index()
+#2 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Dashboard))
+#3 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\lexsoft\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-04-12 17:35:35 --> Undefined property: App\Controllers\admin\Dashboard::$db
+#0 C:\xampp\htdocs\lexsoft\app\Controllers\admin\Dashboard.php(11): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 11, Array)
+#1 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\admin\Dashboard->index()
+#2 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Dashboard))
+#3 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\lexsoft\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-04-12 17:35:36 --> Undefined property: App\Controllers\admin\Dashboard::$db
+#0 C:\xampp\htdocs\lexsoft\app\Controllers\admin\Dashboard.php(11): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 11, Array)
+#1 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\admin\Dashboard->index()
+#2 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Dashboard))
+#3 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\lexsoft\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-04-12 17:35:36 --> Undefined property: App\Controllers\admin\Dashboard::$db
+#0 C:\xampp\htdocs\lexsoft\app\Controllers\admin\Dashboard.php(11): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 11, Array)
+#1 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\admin\Dashboard->index()
+#2 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Dashboard))
+#3 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\lexsoft\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-04-12 17:35:36 --> Undefined property: App\Controllers\admin\Dashboard::$db
+#0 C:\xampp\htdocs\lexsoft\app\Controllers\admin\Dashboard.php(11): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 11, Array)
+#1 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\admin\Dashboard->index()
+#2 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Dashboard))
+#3 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\lexsoft\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-04-12 17:35:36 --> Undefined property: App\Controllers\admin\Dashboard::$db
+#0 C:\xampp\htdocs\lexsoft\app\Controllers\admin\Dashboard.php(11): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 11, Array)
+#1 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\admin\Dashboard->index()
+#2 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Dashboard))
+#3 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\lexsoft\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-04-12 17:35:36 --> Undefined property: App\Controllers\admin\Dashboard::$db
+#0 C:\xampp\htdocs\lexsoft\app\Controllers\admin\Dashboard.php(11): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 11, Array)
+#1 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\admin\Dashboard->index()
+#2 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Dashboard))
+#3 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\lexsoft\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-04-12 17:35:36 --> Undefined property: App\Controllers\admin\Dashboard::$db
+#0 C:\xampp\htdocs\lexsoft\app\Controllers\admin\Dashboard.php(11): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 11, Array)
+#1 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\admin\Dashboard->index()
+#2 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Dashboard))
+#3 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\lexsoft\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-04-12 17:38:02 --> Undefined property: App\Controllers\admin\Dashboard::$db
+#0 C:\xampp\htdocs\lexsoft\app\Controllers\admin\Dashboard.php(11): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 11, Array)
+#1 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\admin\Dashboard->index()
+#2 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Dashboard))
+#3 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\lexsoft\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-04-12 17:38:03 --> Undefined property: App\Controllers\admin\Dashboard::$db
+#0 C:\xampp\htdocs\lexsoft\app\Controllers\admin\Dashboard.php(11): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 11, Array)
+#1 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\admin\Dashboard->index()
+#2 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Dashboard))
+#3 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\lexsoft\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-04-12 17:38:03 --> Undefined property: App\Controllers\admin\Dashboard::$db
+#0 C:\xampp\htdocs\lexsoft\app\Controllers\admin\Dashboard.php(11): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 11, Array)
+#1 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\admin\Dashboard->index()
+#2 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Dashboard))
+#3 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\lexsoft\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-04-12 17:38:04 --> Undefined property: App\Controllers\admin\Dashboard::$db
+#0 C:\xampp\htdocs\lexsoft\app\Controllers\admin\Dashboard.php(11): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 11, Array)
+#1 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\admin\Dashboard->index()
+#2 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Dashboard))
+#3 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\lexsoft\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-04-12 17:38:04 --> Undefined property: App\Controllers\admin\Dashboard::$db
+#0 C:\xampp\htdocs\lexsoft\app\Controllers\admin\Dashboard.php(11): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 11, Array)
+#1 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\admin\Dashboard->index()
+#2 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Dashboard))
+#3 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\lexsoft\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-04-12 17:38:04 --> Undefined property: App\Controllers\admin\Dashboard::$db
+#0 C:\xampp\htdocs\lexsoft\app\Controllers\admin\Dashboard.php(11): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 11, Array)
+#1 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\admin\Dashboard->index()
+#2 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Dashboard))
+#3 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\lexsoft\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-04-12 17:38:04 --> Undefined property: App\Controllers\admin\Dashboard::$db
+#0 C:\xampp\htdocs\lexsoft\app\Controllers\admin\Dashboard.php(11): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 11, Array)
+#1 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\admin\Dashboard->index()
+#2 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Dashboard))
+#3 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\lexsoft\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-04-12 17:38:04 --> Undefined property: App\Controllers\admin\Dashboard::$db
+#0 C:\xampp\htdocs\lexsoft\app\Controllers\admin\Dashboard.php(11): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 11, Array)
+#1 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\admin\Dashboard->index()
+#2 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Dashboard))
+#3 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\lexsoft\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-04-12 17:38:04 --> Undefined property: App\Controllers\admin\Dashboard::$db
+#0 C:\xampp\htdocs\lexsoft\app\Controllers\admin\Dashboard.php(11): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 11, Array)
+#1 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\admin\Dashboard->index()
+#2 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Dashboard))
+#3 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\lexsoft\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-04-12 17:38:15 --> Undefined property: App\Controllers\admin\Dashboard::$db
+#0 C:\xampp\htdocs\lexsoft\app\Controllers\admin\Dashboard.php(11): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 11, Array)
+#1 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\admin\Dashboard->index()
+#2 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Dashboard))
+#3 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\lexsoft\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-04-12 17:38:17 --> Undefined property: App\Controllers\admin\Dashboard::$db
+#0 C:\xampp\htdocs\lexsoft\app\Controllers\admin\Dashboard.php(11): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 11, Array)
+#1 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\admin\Dashboard->index()
+#2 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Dashboard))
+#3 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\lexsoft\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-04-12 18:01:15 --> syntax error, unexpected '}', expecting ';'
+#0 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(265): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(893): class_exists('\\App\\Controller...', true)
+#5 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(417): CodeIgniter\CodeIgniter->startController()
+#6 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\lexsoft\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-04-12 18:01:43 --> syntax error, unexpected '}', expecting ';'
+#0 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(265): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(893): class_exists('\\App\\Controller...', true)
+#5 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(417): CodeIgniter\CodeIgniter->startController()
+#6 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\lexsoft\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-04-12 18:04:06 --> syntax error, unexpected 'class' (T_CLASS)
+#0 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('admin/user/newU...', Array, true)
+#2 C:\xampp\htdocs\lexsoft\app\Controllers\admin\User.php(20): view('admin/user/newU...', Array)
+#3 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\admin\User->new_user()
+#4 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\User))
+#5 C:\xampp\htdocs\lexsoft\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\lexsoft\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
