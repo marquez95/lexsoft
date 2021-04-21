@@ -1,5 +1,5 @@
 <?php 
-namespace App\Controllers\admin;
+namespace App\Controllers\cliente;
 
 use CodeIgniter\Controller;
 use App\Models\UserModel;
@@ -7,19 +7,21 @@ use App\Models\LoginModel;
 class Dashboard extends Controller{
     
     public function index()
-    {        
-        $this->vistaDashboarAdmin([],'dashboard');
+    {    
+
+        $this->vistaDashboarCliente([],'dashboardCliente');
         
        
     }
 
-    private function vistaDashboarAdmin($data,$view){
+    private function vistaDashboarCliente($data,$view){
         
         $loginModel = new LoginModel();
-        $data ['data'] = $loginModel->countAllResults();
-        echo view("admin/template/header");
-        echo view("admin/$view",$data);
-        echo view("admin/template/footer");
+        $id_user = session('id_user');
+        $data ['data'] = $loginModel->where('id_creado ='. $id_user)->countAllResults();
+        echo view("cliente/template/headerCliente");
+        echo view("cliente/$view",$data);
+        echo view("cliente/template/footerCliente");
     }
 
     

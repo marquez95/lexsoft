@@ -61,7 +61,8 @@ class Filters extends BaseConfig
 	 * @var array
 	 */
 	public $filters = [
-		"SessionAdmin" => ["before" => ["/", "/newUser", "/editUser", "/deleteUser", "updateUser"]]
+		"SessionAdmin" => ["before" => ["admin", "/newUser", "/edit","listar","buscar", "/deleteUser", "update"]],
+		"SessionCliente" => ["before" => ["inicio", "/newCliente", "/edit","listarCliente","buscar", "/deleteCliente", "update"]]
 		
 		];
 }

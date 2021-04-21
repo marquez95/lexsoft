@@ -3,7 +3,7 @@
 <div class="content-header">
 <div class="col-sm-6">
     <h1 class="m-0">Agregar |<small><span class="nav-item d-sm-inline-block">
-        <a href="<?= site_url('listar')?>" class="nav-link">Listar</a>
+        <a href="<?= site_url('listarCliente')?>" class="nav-link">Listar</a>
       </span></small></h1>
 </div>
 <section class="content">
@@ -17,7 +17,7 @@
           
           <!-- /.card-header -->
           <!-- form start -->
-          <form method="POST" action="<?= base_url('admin/user/insert_user')?>">
+          <form method="POST" action="<?= base_url('cliente/userCliente/insert_user')?>">
             <div class="card-body">
               <div class="row form-group">
               
@@ -99,9 +99,6 @@
               <div class="form-group">
                   <label for="type">*Tipo de Usuario</label>
                   <select class="custom-select form-control-border" id="type" name="type">
-                    <option selected="true" disabled="disabled">Tipo de usuario</option>
-                    <option value="admin">Administrador</option>
-                    <option value="cliente">Cliente</option>
                     <option value="consultante">Consultante</option>
                   </select>
                 </div>
@@ -111,7 +108,7 @@
 
             <div class="card-footer">
               <button type="submit" class="btn btn-success">Agregar</button>
-              <a href="<?= site_url('/')?> " class="btn btn-danger">Cancelar</a>
+              <a href="<?= site_url('inicio')?> " class="btn btn-danger">Cancelar</a>
               
             </div>
          </form>  

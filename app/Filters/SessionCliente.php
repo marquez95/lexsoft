@@ -10,7 +10,7 @@ class SessionCliente implements FilterInterface
     {
         // Do something here
         if(!session('type') == 'cliente') {
-        	return redirect()->to(base_url('/login'));
+        	return redirect()->to(base_url('/'));
         }
     }
 

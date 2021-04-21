@@ -3,10 +3,11 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class UserModel extends Model{
+class ClienteModel extends Model{
     protected $table      = 'lexsoft_tb_users';
     protected $primaryKey = 'id_user';
     protected $allowedFields = [
+        'id_creado',
         'primer_nombre',
         'segundo_nombre',
         'tercer_nombre',

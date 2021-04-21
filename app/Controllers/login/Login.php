@@ -11,7 +11,6 @@ class Login extends Controller{
     {   
         $mensaje = session('mensaje');
         $data = ['mensaje' =>$mensaje];
-        $mensaje = session('mensaje');
         $this->vistasPredeterminadas('login',$data);        
     }
 
@@ -60,9 +59,9 @@ class Login extends Controller{
     function compararUsuario($type) 
     {
         if ($type['type'] == 'admin') {
-            return redirect()->to(base_url('/'))->with('mensaje', '0');
+            return redirect()->to(base_url('admin'))->with('mensaje', '0');
         }else if ($type['type'] == 'cliente') {
-            echo "es cliente";
+            return redirect()->to(base_url('inicio'))->with('mensaje', '0');
         }else if($type['type'] == 'consultante') {
             echo "es consultante";
         }else{
@@ -74,9 +73,10 @@ class Login extends Controller{
     //cerrar sesion
     function salir()
     {
-        $session = session();
+        session();
         session_destroy();
-        return $this->index();
+        return redirect()->to(base_url('/'))->with('mensaje', 'exitoAgregar');
+      
     }
 
 

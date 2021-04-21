@@ -1,18 +1,18 @@
 <?php 
-namespace App\Controllers\admin;
+namespace App\Controllers\cliente;
 use CodeIgniter\Controller;
 use App\Models\UserModel;
 use App\Models\PaisModel;
-use App\Models\DepartamentoModel;
-use App\Models\MunicipioModel;
 
-class User extends Controller{
+class UserCliente extends Controller{
 
+    
+    
     //index
     public function new_user()
     {   
         
-        $this->vistaDashboarAdmin('usuario/newUser',[]);   
+        $this->vistaDashboarCliente('usuarioCliente/newCliente',[]);   
     }
 
     //datos de usuario
@@ -49,43 +49,44 @@ class User extends Controller{
         $datos=$this->datosUsuario();
         $respuesta = $User->insert($datos);
         if ($respuesta >0) {
-            return redirect()->to(site_url('').'listar')->with('mensaje','exitoAgregar');
+            return redirect()->to(site_url('').'listarCliente')->with('mensaje','exitoAgregar');
         }else{
-            return redirect()->to(site_url('').'listar')->with('mensaje','errorAgregar');
+            return redirect()->to(site_url('').'listarCliente')->with('mensaje','errorAgregar');
         }
        
     }  
 
 
     //listar usuarios
-    public function listar(){
+    public function listar_Cliente(){
         $userModel = new UserModel();
         $mensaje = session('mensaje');
+        $id_user = session('id_user');
         $data = [
-            'datos' => $userModel->asObject()->get(),
+            'datos' => $userModel->asObject()->where('id_creado ='. $id_user)->get(),
             'mensaje' =>$mensaje];
         
-        $this->vistaDashboarAdmin('usuario/listar',$data);
+        $this->vistaDashboarCliente('usuarioCliente/listarCliente',$data);
 
     }
 
 
     //buscar usuarios
-    public function buscar(){
-       
+    public function buscar_cliente(){
+        $id_user = session('id_user');
         $userModel = new UserModel();
-		$data = ['datos' => $userModel->asObject()->get()];  
-        $this->vistaDashboarAdmin('usuario/buscar',$data);   
+		$data = ['datos' => $userModel->asObject()->where('id_creado ='. $id_user)->get()];  
+        $this->vistaDashboarCliente('usuarioCliente/buscarCliente',$data);   
     }
     
 
     //vista editar usuarios
-    public function editUser($id_user=null)
+    public function edit_cliente($id_user=null)
     {   
         
         $userModel = new UserModel();
         $data['datos'] = $userModel->find($id_user);
-        $this->vistaDashboarAdmin('usuario/editUser',$data);
+        $this->vistaDashboarCliente('usuarioCliente/editCliente',$data);
        
         
 
@@ -103,11 +104,11 @@ class User extends Controller{
         $respuesta = $userModel->update($id_user, $data);
 
         if ($respuesta >0) {
-            return redirect()->to(site_url('').'listar')->with('mensaje','exitoUpdate');
+            return redirect()->to(site_url('').'listarCliente')->with('mensaje','exitoUpdate');
         }else{
-            return redirect()->to(site_url('').'listar')->with('mensaje','errorUpdate');
+            return redirect()->to(site_url('').'listarCliente')->with('mensaje','errorUpdate');
         }
-        return $this->response->redirect(site_url('/users-list'));
+        return $this->response->redirect(site_url('/listarCliente'));
     }
     
 
@@ -130,9 +131,9 @@ class User extends Controller{
 
 
     //vistas dashboardadministrador
-    private function vistaDashboarAdmin($view,$data){
-        echo view("admin/template/header");
-        echo view("admin/$view",$data);
-        echo view("admin/template/footer");
+    private function vistaDashboarCliente($view,$data){
+        echo view("cliente/template/headerCliente");
+        echo view("cliente/$view",$data);
+        echo view("cliente/template/footerCliente");
     }
 }
