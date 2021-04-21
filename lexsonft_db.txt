@@ -1,0 +1,131 @@
+-- phpMyAdmin SQL Dump
+-- version 5.1.0
+-- https://www.phpmyadmin.net/
+--
+-- Servidor: 127.0.0.1
+-- Tiempo de generación: 22-04-2021 a las 01:02:38
+-- Versión del servidor: 10.4.18-MariaDB
+-- Versión de PHP: 7.4.16
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Base de datos: `lexsonft_db`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `lexsoft_tb_casos`
+--
+
+CREATE TABLE `lexsoft_tb_casos` (
+  `id_caso` int(11) NOT NULL,
+  `id_cliente` int(11) NOT NULL,
+  `id_consultante` int(11) NOT NULL,
+  `nombre` varchar(200) NOT NULL,
+  `doc_caso` mediumtext NOT NULL,
+  `estado` enum('pendiente','proceso','finalizado','') NOT NULL,
+  `hora_creacion` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Volcado de datos para la tabla `lexsoft_tb_casos`
+--
+
+INSERT INTO `lexsoft_tb_casos` (`id_caso`, `id_cliente`, `id_consultante`, `nombre`, `doc_caso`, `estado`, `hora_creacion`) VALUES
+(2, 96, 97, 'caso1', '<p style=\"text-align: justify; \"> <span style=\"font-family: &quot;Times New Roman&quot;;\">MODELO DE CONTRATO DE\r\nARRENDAMIENTO DE VIVIENDA\r\n</span></p><p style=\"text-align: justify; \"><span style=\"font-family: &quot;Times New Roman&quot;;\">En ______ (ciudad), a __________________ (fecha)\r\nREUNIDOS\r\nDe una parte, _________________________________ (nombre y apellidos)\r\nY de la otra, __________________________________ (nombre y apellidos)\r\nINTERVIENEN\r\nCada uno en su propio nombre y derecho, y se reconocen mutuamente capacidad\r\nsuficiente para el otorgamiento del presente CONTRATO DE ARRENDAMIENTO.\r\nEXPONEN\r\nI)- Don _____________________, con D.N.I. número ____________ , denominado en\r\nlo sucesivo y a efectos del contrato de arrendamiento ARRENDADOR, que es\r\npropietario de pleno dominio de la vivienda sita en __________ (dirección vivienda\r\nobjeto del contrato).\r\nII)- Don _____________________, con D.N.I. número _____________, denominado\r\nen lo sucesivo y a efectos del presente contrato ARRENDATARIO, que está interesado\r\nen alquilar la mencionada finca, para lo cual, ambos acuerdan formalizar el contrato que\r\nse articula en las siguientes cláusulas:\r\nCLAUSULAS\r\nPRIMERA.- El presente contrato se otorga confome a lo establecido en la ley 29/1994,\r\nde 24 de Noviembre, de Arrendamientos Urbanos y se regirá por lo dispuesto en la\r\nmisma, y por lo pactado en este documento.\r\nSEGUNDA.- El piso objeto del presente contrato es la vivienda sita en\r\n_____________, y que se destinará para uso exclusivo de vivienda del arrendatario y de\r\nsu familia, con exclusión de todo otro uso, y no podrá por consiguiente, cederlo,\r\nrealquilarlo o subarrendarlo, en todo ni en parte, ni alojar en él a huéspedes sin permiso\r\nescrito del propietario. \r\nTERCERA.- El contrato comenzará a regir a partir del día __________, concertándose\r\nel arrendamiento por el plazo de UN AÑO.\r\nConcluido el período contractual pactado, el contrato se prorrogará por la tácita, por\r\nperíodos de un año, mientras una de las partes no notifique a la otra, en el plazo de 15\r\ndías antes de la fecha de vencimiento del contrato o de alguna de sus eventuales\r\nprórrogas, su deseo de darlo por terminado.\r\nEn cualquier caso, si el arrendatario quisiera desistir del cumplimiento total del contrato,\r\ndeberá de indemnizar al arrendador con una cantidad equivalente a 1 mensualidad de la\r\nrenta en vigor por cada año del contrato que reste por cumplir. Los períodos de tiempo\r\ninferior a un año, darán lugar a la parte proporcional de la indemnización.\r\nCUARTA.- La renta inicial se establece en la cantidad de ____________ mensuales,\r\ndebiendo de satisfacerse por el arrendatario dentro de los __ (indicar número) primeros\r\ndías de cada mes.\r\nEl importe de la renta deberá pagarse en el domicilio del arrendador o en la Cuenta\r\nCorriente núm. _______________ (indicar los 20 dígitos de la cuenta).\r\nLas partes contratantes convienen que el importe total de la renta que en cada momento\r\nsatisfaga el arrendatario durante la vigencia del contrato y en sus posibles prórrogas, se\r\nacomodará cada año a las variaciones que, en más o menos, sufra el Indice General de\r\nPrecios al Consumo que fije el Instituto Nacional de Estadística ( u organismo que le\r\nsustituya en el futuro), aplicando sobre aquella renta el porcentaje que represente la\r\ndiferencia existente entre los índices que correspondan al período de revisión, teniendo\r\nen cuenta que el mes de referencia para la primera actualización será el último índice\r\nque esté publicado en la fecha de celebración del contrato, y en las sucesivas el que\r\ncorresponda al último publicado.\r\nLas revisiones tendrán carácter acumulativo, de forma que la primera revisión se\r\nefectuará tomando como base la primera renta inicialmente convenida y, para las\r\nsucesivas, la renta revalorizada (renta + incrementos), como consecuencia de\r\nactualizaciones precedentes.\r\nEn ningún caso la demora, retraso o tardanza en la aplicación de dicha acomodación\r\nimplicará pérdida, renuncia o abdicación del derecho del arrendador a practicar la\r\nmisma.\r\nAsí, las partes convienen que tendrá plena eficacia vinculante la notificación que\r\npractique el arrendador o su administrador por nota en el recibo de la mensualidad\r\nprecedente a aquel en que la revalorización de renta haya de surtir efecto.\r\nQUINTA.- El arrendatario, quién previamente ha procedido al examen exhaustivo del\r\npiso y sus accesorios, declara recibir todo lo que es objeto del arriendo en perfecto\r\nestado para el uso a que se destina, y en igual estado ha de devolverlo una vez finalizado\r\nel contrato, siendo de cuenta de él mismo todas las reparaciones que hayan de realizarse\r\npor daños causados por él, o personas que del mismo dependan, en el edificio o\r\nvivienda como consecuencia de mal uso, omisión o negligencia. Serán así mismo por\r\ncuenta del arrendatario las reparaciones que exija el desgaste por el uso ordinario de la\r\nvivienda.\r\nLos servicios de gas, electricidad, teléfono y cualesquiera otros que pudieran ser\r\nsusceptibles de individualización mediante contadores serán también por cuenta del\r\narrendatario, que deberá contratarlos por su cuenta con las empresas suministradoras. \r\nSEXTA.- Los gastos de comunidad, y todos los que se refieran a la propiedad de la\r\nvivienda como el Impuesto sobre Bienes Inmuebles, serán por cuenta del arrendador.\r\nEl arrendatario deberá respetar y cumplir en todo momento las normas por las que se\r\nrige la comunidad de propietarios de la que forma parte el piso arrendado.\r\nEl arrendatario se obliga a permitir el acceso al piso al propietario y a las personas y/o\r\nprofesionales designados por el mismo para la inspección y comprobación del estado de\r\nla vivienda y sus elementos, así como para la realización de cualquier tipo de obra o\r\nreparación que pudiera ser necesario llevar a cabo tanto en la vivienda arrendada como\r\nen el edificio del que forma parte.\r\nSÉPTIMA.- Salvo que el arrendador lo autorice previamente y por escrito, queda\r\nprohibida la realización de obras y la modificación de las instalaciones; tener en el piso\r\nmateriales peligrosos y/o antihigiénicos o que puedan perturbar la normal convivencia\r\nentre vecinos; el subarriendo o la cesión de la vivienda; la colocación de cualquiera\r\nelementos que modifiquen la uniformidad o la estética del edificio y dar a la vivienda\r\ncualquier otro uso que no sea el de servir como vivienda habitual al arrendatario.\r\nEl arrendatario será el único responsable de cuantos daños, tanto físicos como\r\nmateriales puedan ocasionarse a terceros, como consecuencia, directa y indirecta de su\r\nhabitabilidad en la vivienda, eximiendo de toda responsabilidad al propietario, incluso\r\npor daños derivados de instalaciones para servicios o suministros.\r\nOCTAVA.- Por el arrendatario se constituye en este acto FIANZA por importe de\r\n__________ que equivale a 1 mensualidad de renta, que responderá del pago del\r\nalquiler, de los perjuicios por incumplimiento de las obligaciones contractuales y de los\r\ndaños originados en el inmueble.\r\nDurante el primer año de duración del contrato, la fianza no estará sujeta a\r\nactualización, pero transcurrido dicho plazo, se actualizará en la cuantía que\r\ncorresponda hasta que aquella sea igual a una mensualidad de la renta vigente en cada\r\nmomento.\r\nNOVENA.- El arrendatario hace expresa y formal renuncia a todos los beneficios y\r\nderechos especiales que le concede la Ley 29/1994 de Arrendamientos Urbanos, y que\r\nteniendo el carácter de renunciables, no se le reconozcan expresamente en el presente\r\ncontrato.\r\nDÉCIMA.- Las partes convienen que de producirse el fallecimiento del arrendatario\r\nuna vez transcurridos dos años más tres años de prórroga, no será de aplicación el\r\nrégimen de subrogación mortis causa que regula el Art. 16 de la Ley de Arrendamientos\r\nUrbanos. De producirse dicha defunción en el plazo citado, el arrendamiento se\r\nextinguirá al cumplirse dicho plazo sea quien fuera el que hubiera sucedido al\r\narrendatario en el arrendamiento.\r\nA efectos del Art.14 de la vigente ley de Arrendamientos Urbanos y a cuantos otros\r\npudieran resultar pertinentes, las partes convienen que la enajenación de la vivienda\r\nextinguirá el arrendamiento.\r\n Fdo.: EL ARRENDADOR Fdo.: EL ARRENDATARIO</span></p>', '', '12/12/1225');
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `lexsoft_tb_users`
+--
+
+CREATE TABLE `lexsoft_tb_users` (
+  `id_user` int(11) NOT NULL,
+  `id_creado` varchar(11) NOT NULL,
+  `primer_nombre` varchar(50) NOT NULL,
+  `segundo_nombre` varchar(50) NOT NULL,
+  `tercer_nombre` varchar(50) NOT NULL,
+  `apellido_paterno` varchar(50) NOT NULL,
+  `apellido_materno` varchar(50) NOT NULL,
+  `fecha_nacimiento` varchar(75) NOT NULL,
+  `dui` varchar(10) NOT NULL,
+  `pais` varchar(200) NOT NULL,
+  `direccion` varchar(500) NOT NULL,
+  `departamento` varchar(50) NOT NULL,
+  `municipio` varchar(50) NOT NULL,
+  `username` varchar(50) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `numero_telefono` varchar(20) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  `type` enum('admin','cliente','consultante','') NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Volcado de datos para la tabla `lexsoft_tb_users`
+--
+
+INSERT INTO `lexsoft_tb_users` (`id_user`, `id_creado`, `primer_nombre`, `segundo_nombre`, `tercer_nombre`, `apellido_paterno`, `apellido_materno`, `fecha_nacimiento`, `dui`, `pais`, `direccion`, `departamento`, `municipio`, `username`, `email`, `numero_telefono`, `password`, `type`) VALUES
+(96, '96', 'JOSE', 'MARIO', '', 'MARQUEZ', 'CHICAS', '1212-03-12', '123123', '12312', '1221', '123', '12321', 'admin', 'josemarmarquez@gmail.com', '76', '$2y$10$RpHC..8u08LVI1ggbE647e8nf5/2gajG5oJsGaCePepUmyx1SiYIS', 'admin'),
+(97, '96', 'Jose', '', '', 'Felix ', 'Montes', '1983-12-31', '12456378-9', 'El Salvador', '6a 10a Avenida Norte, Colonia Flor Blanca', 'San Salvador', 'San Salvador', 'cliente', 'cliente@gmail.com', '789787987', '$2y$10$DbSSe3TizQw9gtH8y2m6X.TTMF79YBzsnPQPaP.HmF5vaigfMjpxe', 'cliente'),
+(98, '97', 'Jose', 'Mario', '', 'Marquez', 'Chicas', '2021-04-21', '123123', 'El Salvador', '6a 10a Avenida Norte, Colonia Flor Blanca', 'San Salvador', 'San Salvador', 'cliente', 'asdasasdasdsa@qsdas', '76166333', '$2y$10$g9Z4Fj6uX.0G2h69tUUtHOeTNw35qggMqlIlopEPEWfp3euEL1kmO', 'consultante');
+
+--
+-- Índices para tablas volcadas
+--
+
+--
+-- Indices de la tabla `lexsoft_tb_casos`
+--
+ALTER TABLE `lexsoft_tb_casos`
+  ADD PRIMARY KEY (`id_caso`),
+  ADD KEY `id_cliente` (`id_cliente`,`id_consultante`),
+  ADD KEY `id_consultante` (`id_consultante`);
+
+--
+-- Indices de la tabla `lexsoft_tb_users`
+--
+ALTER TABLE `lexsoft_tb_users`
+  ADD PRIMARY KEY (`id_user`);
+
+--
+-- AUTO_INCREMENT de las tablas volcadas
+--
+
+--
+-- AUTO_INCREMENT de la tabla `lexsoft_tb_casos`
+--
+ALTER TABLE `lexsoft_tb_casos`
+  MODIFY `id_caso` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT de la tabla `lexsoft_tb_users`
+--
+ALTER TABLE `lexsoft_tb_users`
+  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=99;
+
+--
+-- Restricciones para tablas volcadas
+--
+
+--
+-- Filtros para la tabla `lexsoft_tb_casos`
+--
+ALTER TABLE `lexsoft_tb_casos`
+  ADD CONSTRAINT `lexsoft_tb_casos_ibfk_1` FOREIGN KEY (`id_cliente`) REFERENCES `lexsoft_tb_users` (`id_user`),
+  ADD CONSTRAINT `lexsoft_tb_casos_ibfk_2` FOREIGN KEY (`id_consultante`) REFERENCES `lexsoft_tb_users` (`id_user`);
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
