@@ -1,3 +1,5 @@
 validaciones de campos 
 curso udemy
-video: 
+video: 49-50-53-58-73
+
+86 personalizacion
