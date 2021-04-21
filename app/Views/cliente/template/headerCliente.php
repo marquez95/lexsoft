@@ -21,7 +21,8 @@
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
-    
+    <!-- include summernote css/js -->
+    <link rel="stylesheet" href="<?=base_url('plugins/summernote/summernote-bs4.min.css')?>">
     
 </head>
 <!--

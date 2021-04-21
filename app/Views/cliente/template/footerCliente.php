@@ -30,6 +30,8 @@
 <script src="<?= base_url('plugins/datatables-buttons/js/buttons.html5.min.js')?>"></script>
 <script src="<?= base_url('plugins/datatables-buttons/js/buttons.print.min.js')?>"></script>
 <script src="<?= base_url('plugins/datatables-buttons/js/buttons.colVis.min.js')?>"></script>
+<!-- Summernote -->
+<script src="<?= base_url('plugins/summernote/summernote-bs4.min.js')?>"></script>
 
 <!-- AdminLTE App -->
 <script src="<?=base_url('dist/js/adminlte.min.js')?>"></script>
@@ -44,6 +46,19 @@
     }).buttons().container().appendTo('#tabla1_wrapper .col-md-6:eq(0)');
     
   });
+</script>
+
+<script>
+  $(function () {
+    // Summernote
+    $('#summernote').summernote()
+
+    // CodeMirror
+    CodeMirror.fromTextArea(document.getElementById("codeMirrorDemo"), {
+      mode: "htmlmixed",
+      theme: "monokai"
+    });
+  })
 </script>
 
 

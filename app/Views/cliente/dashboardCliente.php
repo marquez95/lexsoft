@@ -22,7 +22,7 @@
         
         <div class="row">
           <div class="col-lg-3 col-6">
-            <a href="newUser" class="small-box bg-warning">
+            <a href="newCliente" class="small-box bg-warning">
               <div class="inner">
                 <h3><?= $data;?></h3>
 

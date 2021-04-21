@@ -45,6 +45,8 @@ $routes->get('buscarCliente', 'cliente/UserCliente::buscar_cliente');
 $routes->put('update/(:num)', 'cliente/UserCliente::update/$1');
 $routes->get('deleteUser', 'cliente/User::delete_user');
 
+$routes->get('nuevoCaso', 'cliente/Casos::nuevo_caso');
+
 /*
  * --------------------------------------------------------------------
  * Route Definitions
