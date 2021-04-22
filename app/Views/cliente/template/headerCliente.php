@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title><?= session('nombre');?> <?= session('apellido');?> | Dashboard  </title>
+    <title><?= session('nombre');?> <?= session('apellido');?> | Dashboard </title>
 
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet"
@@ -24,6 +24,11 @@
     <!-- include summernote css/js -->
     <link rel="stylesheet" href="<?=base_url('plugins/summernote/summernote-bs4.min.css')?>">
     
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
+
 </head>
 <!--
 `body` tag options:
@@ -184,8 +189,8 @@
         <aside class="main-sidebar sidebar-dark-primary elevation-4">
             <!-- Brand Logo -->
             <a href="<?= base_url('inicio')?>" class="brand-link">
-                <img src="<?= base_url('dist/img/AdminLTELogo2.png')?>" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
-                    style="opacity: .8">
+                <img src="<?= base_url('dist/img/AdminLTELogo2.png')?>" alt="AdminLTE Logo"
+                    class="brand-image img-circle elevation-3" style="opacity: .8">
                 <span class="brand-text font-weight-light">Lexsoft | <small><?= session('type');?></small></span>
             </a>
 
@@ -194,10 +199,12 @@
                 <!-- Sidebar user panel (optional) -->
                 <div class="user-panel mt-3 pb-3 mb-3 d-flex">
                     <div class="image">
-                        <img src="<?= base_url('dist/img/avatar.png')?>" class="img-circle elevation-2" alt="User Image">
+                        <img src="<?= base_url('dist/img/avatar.png')?>" class="img-circle elevation-2"
+                            alt="User Image">
                     </div>
                     <div class="info">
-                        <a href="<?= base_url('inicio')?>" class="d-block"><?= session('nombre');?> <?= session('apellido');?> 
+                        <a href="<?= base_url('inicio')?>" class="d-block"><?= session('nombre');?>
+                            <?= session('apellido');?>
                             <h6>Perfil</h6>
                         </a>
 
@@ -212,7 +219,7 @@
                             <a href="#" class="nav-link">
                                 <i class="fas fa-users-cog"></i>
                                 <p>
-                                    Gestion de usuarios
+                                    Gestion de Clientes
                                     <i class="right fas fa-angle-left"></i>
                                 </p>
                             </a>
@@ -220,24 +227,60 @@
                                 <li class="nav-item">
                                     <a href="<?=base_url('listarCliente')?>" class="nav-link">
                                         <i class="fas fa-list-ul"></i>
-                                        <p>Ver Usuarios</p>
+                                        <p>Listar clientes</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
                                     <a href="<?=base_url('newCliente')?>" class="nav-link">
                                         <i class="fas fa-user-plus"></i>
-                                        <p>Agregar</p>
+                                        <p>Agregar un cliente nuevo</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="fas fa-file-alt"></i>
+                                <p>
+                                    Gestion de Casos
+                                    <i class="right fas fa-angle-left"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="<?=base_url('nuevoCaso')?>" class="nav-link">
+                                        <i class="fas fa-plus"></i>
+                                        <p>Caso nuevo</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="<?=base_url('listarCliente')?>" class="nav-link">
+                                        <i class="fas fa-clock"></i>
+                                        <p>Casos Pendientes</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="<?=base_url('newCliente')?>" class="nav-link">
+                                        <i class="fas fa-cog"></i>
+                                        <p>Casos en Proceso</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="<?=base_url('newCliente')?>" class="nav-link">
+                                        <i class="fas fa-check-circle"></i>
+                                        <p>Casos finalizados</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
                                     <a href="<?=base_url('buscarCliente')?>" class="nav-link">
-                                        <i class="fas fa-user-plus"></i>
-                                        <p>Buscar</p>
+                                        <i class="fas fa-file-medical"></i>
+                                        <p>Ingresar nueva plantilla</p>
                                     </a>
                                 </li>
-                                
+
                             </ul>
                         </li>
+
                         <li class="nav-item">
                             <a href="<?= base_url('/salir')?>" class="nav-link ">
                                 <i class="fas fa-sign-out-alt"></i>

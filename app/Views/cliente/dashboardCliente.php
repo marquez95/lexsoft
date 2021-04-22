@@ -49,7 +49,7 @@
           <div class="col-lg-3 col-6">
             <a href="<?=base_url('nuevoCaso')?>" class="small-box bg-success">
               <div class="inner">
-                <h3><i class="fas fa-plus"></i></h3>
+                <h3><i class="fas fa-file-alt"></i></h3>
 
                 <p>Nuevo Caso</p>
               </div>

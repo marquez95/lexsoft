@@ -15,22 +15,28 @@
 
                         <!-- /.card-header -->
                         <!-- form start -->
+
+
                         <form method="POST" action="<?= base_url('cliente/userCliente/insert_user')?>">
                             <div class="card-body">
 
                                 <div class="row form-group">
                                     <input type="hidden" name="id_creado" value="<?= session('id_user');?>" />
 
-                                    <div class="form-group">
-                                        <label for="type">*DUI CLIENTE</label>
-                                        <input type="direccion" class="form-control" id="direccion" name="direccion" value="">
-                                    </div>
+                                    <label for="dui" class="form-label">Documento de identidad</label>
+                                    <input class="form-control" list="documento" id="dui" name="dui"
+                                        placeholder="Escriba el numero de identificacion">
+                                    <datalist id="documento">
+                                        <?php foreach($datos as $key): ?>
+                                        <option value="<?= $key->dui ?>">
+                                            <?php endforeach; ?>
+                                    </datalist>
 
                                 </div>
                                 <div class="row form-group">
-                                    <label for="direccion">Nombre</label>
-                                    <input type="direccion" class="form-control" id="direccion" name="direccion"
-                                        value="" readonly>
+                                    <label for="direccion">Nombre Completo</label>
+                                    <input type="direccion" class="form-control" id="nombre" name="nombre"
+                                         readonly>
                                 </div>
                                 <br>
                                 <div class="row form-group">
@@ -43,30 +49,31 @@
                                     </select>
                                 </div>
                                 <br>
+                                
                                 <div class="row form-group">
-                                    <label for="type">Seleccionar plantilla</label>
-                                    <select class="custom-select form-control-border" id="type" name="type">
-                                        <option selected="true" disabled="disabled">Seleccionar plantilla a trabajar</option>
-                                        <option value="admin">Actas Constitutivas de Compañías</option>
-                                        <option value="cliente">Sociedades Civiles</option>
-                                        <option value="consultante">Firmas Personales</option>
-                                        <option value="consultante">Venta de Inmuebles</option>
-                                        <option value="consultante">Venta de Muebles</option>
-                                        <option value="consultante">Permuta</option>
-                                        <option value="consultante">Arrendamiento</option>
-                                    </select>
+                                    <input type="hidden" name="id_creado" value="<?= session('id_user');?>" />
+
+                                    <label for="nombre_plantilla" class="form-label">Plantilla</label>
+                                    <input class="form-control" list="documento2" id="nombre_plantilla" name="nombre_plantilla"
+                                        placeholder="Escriba el numero de identificacion">
+                                    <datalist id="documento2">
+                                        <?php foreach($plantilla as $key2): ?>
+                                        <option value="<?= $key2->nombre_plantilla ?>">
+                                            <?php endforeach; ?>
+                                    </datalist>
+
                                 </div>
+                                <div class="row form-group">
+                                    <label for="plantillaValue">Nombre Completo</label>
+                                    <input type="plantillaValue" class="form-control" id="plantillaValue" name="plantillaValue"
+                                         readonly>
+                                </div>
+                                
                                 <div class="col-md-12">
                                     <div class="card card-outline card-info">
 
-                                        <!-- /.card-header -->
-                                        <div class="card-body">
-                                            <textarea id="summernote">
-
-                                            imprimir mediante php el contedio guaradado en una tabla llamada plantilla
-                                            </textarea>
-                                        </div>
-                                        <div class="card-footer">
+                                        <textarea name="texto" id="texto" cols="30" rows="10"></textarea>
+                                        <div class="summernote" name="texto" id="texto" cols="30" rows="10" value=""></div>
 
                                         </div>
                                     </div>
@@ -79,6 +86,11 @@
 
                                 </div>
                         </form>
+
+
+
+
+
                     </div>
                 </div>
             </div>
@@ -88,4 +100,63 @@
     </section>
 
 
-    <!-- /.card -->
+    </div>  
+            <!-- cuando se seleccione o escriba dui existente en la base de datos, autocomplete el input de nombre completo
+            en la vista de nuevo Caso    -->                            
+    <script type="text/javascript">
+        var getDocumentoIdentificacion=()=>{
+            var dui=$('#dui').val();
+            console.log(dui);
+            if (dui !='') {
+                $.ajax({
+                url: "<?=base_url()?>/getDocumentoIdentificacion",
+                type: "POST",
+                data: {
+                    dui:dui
+                },
+                success: (respuesta)=>{
+                    
+                    var j = JSON.parse(respuesta);
+                    $('#nombre').val(j.datos[0].primer_nombre+' '+j.datos[0].segundo_nombre+' '+j.datos[0].tercer_nombre
+                    +' '+j.datos[0].apellido_paterno+' '+j.datos[0].apellido_materno);
+                    
+                } 
+                })
+                
+            }
+        }
+
+        var getPlantilla=()=>{
+            var nombre_plantilla=$('#nombre_plantilla').val();
+            console.log(nombre_plantilla);
+            if (nombre_plantilla !='') {
+                $.ajax({
+                    url:"<?=base_url()?>/getPlantilla",
+                    type: "POST",
+                    data: {
+                        nombre_plantilla:nombre_plantilla
+                },
+                
+                success: (respuestados)=>{
+                    var jdos = JSON.parse(respuestados);
+                    $("#texto").val(jdos.datosdos[0].plantilla);
+                    
+                }
+                })
+            }
+        }
+
+        
+        $(document).ready(()=>{
+            $('#nombre_plantilla').on('change',()=>{
+                getPlantilla(); 
+            }),
+            $('#dui').on('change',()=>{
+                getDocumentoIdentificacion(); 
+            })
+        })
+
+    </script>
+
+    <!-- cuando se seleccione una plantilla se llene el summernote automaticamente con esa plantilla  -->                            
+            

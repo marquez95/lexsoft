@@ -13,7 +13,6 @@
 
 <!-- ./wrapper -->
 
-<script src="<?=base_url('plugins/jquery/jquery.min.js')?>"></script>
 <!-- jQuery -->
 <script src="<?=base_url('plugins/bootstrap/js/bootstrap.bundle.min.js')?>"></script>
 <!-- Bootstrap 4 -->
@@ -49,16 +48,12 @@
 </script>
 
 <script>
-  $(function () {
-    // Summernote
-    $('#summernote').summernote()
-
-    // CodeMirror
-    CodeMirror.fromTextArea(document.getElementById("codeMirrorDemo"), {
-      mode: "htmlmixed",
-      theme: "monokai"
-    });
-  })
+ $('.summernote').summernote({
+  height: 150,   //set editable area's height
+  codemirror: { // codemirror options
+    theme: 'monokai'
+  }
+});
 </script>
 
 

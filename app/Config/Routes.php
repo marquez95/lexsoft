@@ -46,6 +46,8 @@ $routes->put('update/(:num)', 'cliente/UserCliente::update/$1');
 $routes->get('deleteUser', 'cliente/User::delete_user');
 
 $routes->get('nuevoCaso', 'cliente/Casos::nuevo_caso');
+$routes->post('getDocumentoIdentificacion','cliente/Casos::buscarNombre');
+$routes->post('getPlantilla','cliente/Casos::buscarPlantilla');
 
 /*
  * --------------------------------------------------------------------
