@@ -1,14 +1,14 @@
 </div>
- 
 
-  <!-- Main Footer -->
-  <footer class="main-footer">
+
+<!-- Main Footer -->
+<footer class="main-footer">
     <strong>Copyright &copy; 2021 Lexsoft</strong>
-   Todos los derechos reservados
+    Todos los derechos reservados
     <div class="float-right d-none d-sm-inline-block">
-      <b>Version</b> 1.0.0
+        <b>Version</b> 1.0.0
     </div>
-  </footer>
+</footer>
 </div>
 
 <!-- ./wrapper -->
@@ -38,25 +38,28 @@
 <script src="<?=base_url('dist/js/demo.js')?>"></script>
 <!-- Page specific script -->
 <script>
-  $(function () {
+$(function() {
     $("#tabla1").DataTable({
-      "responsive": true, "lengthChange": false, "autoWidth": false,
-      "buttons": ["copy", "excel", "pdf", "print", "colvis"]
+        "responsive": true,
+        "lengthChange": false,
+        "autoWidth": false,
+        "buttons": ["copy", "excel", "pdf", "print", "colvis"]
     }).buttons().container().appendTo('#tabla1_wrapper .col-md-6:eq(0)');
-    
-  });
+
+});
 </script>
 
 <script>
- $('.summernote').summernote({
-  height: 150,   //set editable area's height
-  codemirror: { // codemirror options
-    theme: 'monokai'
-  }
+$('.summernote').summernote({
+    height: 150, //set editable area's height
+    codemirror: { // codemirror options
+        theme: 'monokai'
+    }
 });
 </script>
 
 
 
 </body>
+
 </html>

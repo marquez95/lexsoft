@@ -20,6 +20,46 @@ if (mensaje == 'exitoAgregar') {
         showConfirmButton: false,
         timer: 1500
     })
+	
+	//alert se agrego plantilla
+} else if (mensaje == 'exitoAgregarPlantilla') {
+    Swal.fire({
+        position: 'top-end',
+        icon: 'success',
+        title: 'Nueva plantilla agreda a la base de datos',
+        showConfirmButton: false,
+        timer: 2500
+    })
+	
+	 //alert cuando no se agrego
+} else if (mensaje == 'errorAgregarPlantilla') {
+    Swal.fire({
+        position: 'top-end',
+        icon: 'error',
+        title: 'Plantilla no fue agregada',
+        showConfirmButton: false,
+        timer: 1500
+    })
+	
+	//alert se agrego plantilla
+} else if (mensaje == 'exitoAgregarCaso') {
+    Swal.fire({
+        position: 'top-end',
+        icon: 'success',
+        title: 'El nuevo caso fue agregado correctamente a la base de datos',
+        showConfirmButton: false,
+        timer: 2500
+    })
+	
+	 //alert cuando no se agrego
+} else if (mensaje == 'errorAgregarCaso') {
+    Swal.fire({
+        position: 'top-end',
+        icon: 'error',
+        title: 'Plantilla no fue agregada',
+        showConfirmButton: false,
+        timer: 1500
+    })
 
      
     //exito al actualizar
@@ -31,6 +71,8 @@ if (mensaje == 'exitoAgregar') {
             showConfirmButton: false,
             timer: 1500
         })
+		
+
 
         //alert cuando no se actualizo
 } else if (mensaje == 'errorUpdate') {

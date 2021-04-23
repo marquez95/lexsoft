@@ -4,6 +4,8 @@ namespace App\Controllers\cliente;
 use CodeIgniter\Controller;
 use App\Models\ClienteModel;
 use App\Models\PlantillaModal;
+use App\Models\CasosModal;
+
 class Casos extends Controller{
     
     public function nuevo_caso(){
@@ -46,4 +48,37 @@ class Casos extends Controller{
         print_r(json_encode($datados));
 
     }
+
+    public function datosCasos(){
+        
+        
+        $data = [
+            'id_cliente'         =>$this->request->getVar('id_cliente'),
+            'id_consultante'  =>$this->request->getVar('id_consultante'),
+            'nombre'         =>$this->request->getVar('nombre'),
+            'doc_caso'         =>$this->request->getVar('doc_caso'),
+            'estado'         =>$this->request->getVar('estado')
+            
+            
+        ];
+        return $data;
+    }
+
+
+    public function insert_caso()
+    {   
+        
+        $casosModal = new CasosModal();
+        $datos=$this->datosCasos();
+        
+        $respuesta = $casosModal->insert($datos);
+        
+        if ($respuesta >0) {
+            return redirect()->to(site_url('').'inicio')->with('mensaje','exitoAgregarCaso');
+        }else{
+            return redirect()->to(site_url('').'inicio')->with('mensaje','errorAgregarCaso');
+        }
+       
+    } 
+
 }

@@ -45,6 +45,11 @@ $routes->get('buscarCliente', 'cliente/UserCliente::buscar_cliente');
 $routes->put('update/(:num)', 'cliente/UserCliente::update/$1');
 $routes->get('deleteUser', 'cliente/User::delete_user');
 
+$routes->get('/listarPlantilla', 'cliente/Plantilla::listar_plantilla');
+$routes->get('nuevaPlantilla', 'cliente/Plantilla::index');
+$routes->post('insertarPlantilla', 'cliente/Plantilla::insert_plantilla');
+
+
 $routes->get('nuevoCaso', 'cliente/Casos::nuevo_caso');
 $routes->post('getDocumentoIdentificacion','cliente/Casos::buscarNombre');
 $routes->post('getPlantilla','cliente/Casos::buscarPlantilla');

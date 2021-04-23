@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="<?=base_url('plugins/datatables-buttons/css/buttons.bootstrap4.min.css')?>">
     <!-- IonIcons -->
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+
     <!-- Theme style -->
     <link rel="stylesheet" href="<?=base_url('dist/css/adminlte.min.css')?>">
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
@@ -23,9 +24,10 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     <!-- include summernote css/js -->
     <link rel="stylesheet" href="<?=base_url('plugins/summernote/summernote-bs4.min.css')?>">
-    
+
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
 
 
 
@@ -53,9 +55,7 @@
                 <li class="nav-item d-none d-sm-inline-block">
                     <a href="<?= base_url('inicio')?>" class="nav-link">Home</a>
                 </li>
-                <li class="nav-item d-none d-sm-inline-block">
-                    <a href="<?= base_url('inicio')?>" class="nav-link">Contact</a>
-                </li>
+
             </ul>
 
             <!-- Right navbar links -->
@@ -272,9 +272,9 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="<?=base_url('buscarCliente')?>" class="nav-link">
+                                    <a href="<?=base_url('nuevaPlantilla')?>" class="nav-link">
                                         <i class="fas fa-file-medical"></i>
-                                        <p>Ingresar nueva plantilla</p>
+                                        <p>Nueva plantilla</p>
                                     </a>
                                 </li>
 
