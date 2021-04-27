@@ -52,4 +52,4 @@
 </div>
 <!-- /.login-box -->
         
-<?php include('alerts/alerts.php'); ?>
+<?php include('js/alerts/alerts.php'); ?>

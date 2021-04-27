@@ -18,28 +18,27 @@
 
 
                         <form method="POST" action="<?= base_url('cliente/Casos/insert_caso')?>">
+
                             <div class="card-body">
+                                <!--  id del abogado -->
+                                <input type="hidden" name="id_cliente" value="<?= session('id_user');?>" />
 
-                                <div class="row form-group">
-                                    <!--  id del abogado -->
-                                    <input type="hidden" name="id_cliente" value="<?= session('id_user');?>" />
+                                <!--  id del cliente del abogado -->
+                                <?php foreach($datos as $key): ?>
+                                <input type="hidden" name="id_consultante" value="<?= $key->id_user ?>" />
+                                <?php endforeach; ?>
 
-                                    <!--  id del cliente del abogado -->
+
+                                <label for="dui" class="form-label">Documento de identidad</label>
+                                <input class="form-control" list="documento" id="dui" name="dui"
+                                    placeholder="Escriba el numero de identificacion">
+                                <datalist id="documento">
                                     <?php foreach($datos as $key): ?>
-                                    <input type="hidden" name="id_consultante" value="<?= $key->id_user ?>" />
-                                    <?php endforeach; ?>
+                                    <option value="<?= $key->dui ?>">
+                                        <?php endforeach; ?>
+                                </datalist>
 
 
-                                    <label for="dui" class="form-label">Documento de identidad</label>
-                                    <input class="form-control" list="documento" id="dui" name="dui"
-                                        placeholder="Escriba el numero de identificacion">
-                                    <datalist id="documento">
-                                        <?php foreach($datos as $key): ?>
-                                        <option value="<?= $key->dui ?>">
-                                            <?php endforeach; ?>
-                                    </datalist>
-
-                                </div>
                                 <div class="row form-group">
                                     <label for="direccion">Nombre Completo</label>
                                     <input type="direccion" class="form-control" id="nombre" name="nombre" readonly>
@@ -54,52 +53,85 @@
                                     </select>
                                 </div>
                                 <br>
+                                <div class="container py-3 text-black-50">
+                                    <div class="row">
 
-                                <div class="row form-group">
+                                        <div class="col-md-12">
 
+                                            
 
-                                    <label for="nombre_plantilla" class="form-label">Plantilla</label>
-                                    <input class="form-control" list="documento2" id="nombre_plantilla"
-                                        name="nombre_plantilla" placeholder="Escriba el numero de identificacion">
-                                    <datalist id="documento2">
-                                        <?php foreach($plantilla as $key2): ?>
-                                        <option value="<?= $key2->nombre_plantilla ?>">
-                                            <?php endforeach; ?>
-                                    </datalist>
+                                                <div class="input-group mb-3">
+                                                    <input type="file" class="form-control" id="idFile">
+                                                    <!-- <label class="input-group-text" for="inputGroupFile01">Subir</label> -->
+                                                </div>
 
-                                </div>
+                                                <button type="button" class="btn btn-primary" id="btn-form-doc">Ingresar
+                                                    Datos</button>
+                                            
+                                        </div>
+                                        <div class="col-md-12">
 
+                                            <div class="border p-2 my-2 d-none" hidden id="outputFile"></div>
+                                        </div>
+                                        <div class="col-md-12">
 
-                                <div class="col-md-12">
-                                    <div class="card card-outline card-info">
+                                            <div class="card card-outline card-info">
 
-                                        <!-- <textarea name="doc_caso" id="doc_caso" cols="30" rows="10"></textarea> -->
-                                        <textarea class="summernote" name="doc_caso" id="doc_caso" cols="30"
-                                            rows="10"></textarea>
+                                                <!-- <textarea name="doc_caso" id="doc_caso" cols="30" rows="10"></textarea> -->
+                                                <textarea class="" name="doc_caso" id="doc_caso" cols="30"
+                                                    rows="10"></textarea>
 
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
+                               
+                                
+                                <div class="modal fade" id="idModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Ingreso de valores</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                 <span aria-hidden="true">&times;</span>
+                                            </div>
+                                            <div class="modal-body" id="idModalBody">
+
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-primary" id="btn-add">Agregar</button>
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+
+
                             </div>
+                    </div>
 
-
-                            <div class="card-footer">
-                                <button type="submit" class="btn btn-success">Agregar</button>
-                                <a href="<?= site_url('inicio')?> " class="btn btn-danger">Cancelar</a>
-
-                            </div>
-                        </form>
-
-
-
-
+                    <div class="card-footer">
+                        <button type="submit" class="btn btn-success">Agregar</button>
+                        <a href="<?= site_url('inicio')?> " class="btn btn-danger">Cancelar</a>
 
                     </div>
+                    </form>
+
+
+
+
+
                 </div>
             </div>
         </div>
+</div>
 
 
-    </section>
+</section>
 
 
 </div>
@@ -129,12 +161,12 @@ var getDocumentoIdentificacion = () => {
     }
 }
 
-var getPlantilla = () => {
+/* var getPlantilla = () => {
     var nombre_plantilla = $('#nombre_plantilla').val();
     console.log(nombre_plantilla);
     if (nombre_plantilla != '') {
         $.ajax({
-            url: "<?=base_url()?>/getPlantilla",
+            url: "/getPlantilla",
             type: "POST",
             data: {
                 nombre_plantilla: nombre_plantilla
@@ -142,24 +174,41 @@ var getPlantilla = () => {
 
             success: (respuestados) => {
                 var jdos = JSON.parse(respuestados);
+                const recorrer = jdos.datosdos[0].plantilla;
+
+
+                if (recorrer.includes('{nombre}')) {
+                    var escrito = prompt('{nombre}');
+                    console.log(remplazar = recorrer.replace('{nombre}', escrito));
+
+                    if (remplazar.includes('{apellido}')) {
+                        var escrito = prompt('{apellido}');
+                        console.log(remplazardos = remplazar.replace('{apellido}', escrito));
+
+
+                        $("#doc_caso").html(remplazardos);
+                        $('.summernote').summernote();
+                    }
+
+                    $("#doc_caso").html(remplazar);
+                    $('.summernote').summernote();
+                }
+
                 $("#doc_caso").html(jdos.datosdos[0].plantilla);
-
                 $('.summernote').summernote();
-
             }
+
+
         })
     }
-}
+
+
+
+} */
 
 
 $(document).ready(() => {
-    $('.summernote').summernote();
-    $('#nombre_plantilla').on('change', () => {
-            $('.summernote').summernote(
-            'destroy'); //funcion para destruir el summernote actual cuando se selecciona la plantilla
-            //para reemplazarlo por el nuevo, con la plantilla exportada               
-            getPlantilla(); //busca plantilla  
-        }),
+    
         $('#dui').on('change', () => {
             getDocumentoIdentificacion();
         })

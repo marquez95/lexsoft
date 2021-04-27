@@ -56,7 +56,7 @@
                                 </td>
                                 <td>
                                     <a href="<?= base_url('cliente/UserCliente/delete_user/'.$key->id_user)?>"
-                                        class="btn btn-danger btn-sm">Eliminar</a>
+                                        class="btn btn-danger btn-sm"> Eliminar</a>
                                 </td>
                             </tr>
                         </tbody>
@@ -78,4 +78,4 @@
 
 
 
-<?php include('alerts/alerts.php'); ?>
+<?php include('js/alerts/alerts.php'); ?>

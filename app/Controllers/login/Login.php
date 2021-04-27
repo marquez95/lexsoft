@@ -51,7 +51,7 @@ class Login extends Controller{
 
            
         }
-        return $this->index();
+        return redirect()->back()->with('mensaje','loginError');
     }
 
 
@@ -59,13 +59,13 @@ class Login extends Controller{
     function compararUsuario($type) 
     {
         if ($type['type'] == 'admin') {
-            return redirect()->to(base_url('admin'))->with('mensaje', '0');
+            return redirect()->to(base_url('admin'))->with('mensaje', 'exitoAgregar');
         }else if ($type['type'] == 'cliente') {
             return redirect()->to(base_url('inicio'))->with('mensaje', '0');
         }else if($type['type'] == 'consultante') {
             echo "es consultante";
         }else{
-            return redirect()->to(site_url('').'listar')->with('mensaje','exitoAgregar');
+            return redirect()->back()->with('mensaje','loginError');
         }
     }
 

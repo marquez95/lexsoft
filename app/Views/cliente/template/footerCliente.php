@@ -12,7 +12,7 @@
 </div>
 
 <!-- ./wrapper -->
-
+<script src="<?=base_url('/static/js/index.js')?>" type="module"></script>
 <!-- jQuery -->
 <script src="<?=base_url('plugins/bootstrap/js/bootstrap.bundle.min.js')?>"></script>
 <!-- Bootstrap 4 -->
